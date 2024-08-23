@@ -5,6 +5,15 @@ plugins {
 group 'ru.clevertec.utils'
 version '1.0-SNAPSHOT'
 
+jar {
+    manifest {
+        // This is where the Main class is specified for launching applications (otherwise the jar will not start)
+        attributes 'Main-Class': 'ru.clevertec.utils.StringUtils'
+        archivesBaseName = 'utils'
+        version = '1.3.5'
+    }
+}
+
 repositories {
     mavenCentral()
 }
