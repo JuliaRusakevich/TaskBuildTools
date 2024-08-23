@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+}
+
+group 'ru.clevertec.utils'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'ru.clevertec.utils.App'
+    }
+    archiveBaseName = 'task'
+    version = '1.0.0'
+
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    from { configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
+
+}
+
+dependencies {
+    implementation project(":core")
+    implementation 'ru.clevertec.utils:utils:1.3.5'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
