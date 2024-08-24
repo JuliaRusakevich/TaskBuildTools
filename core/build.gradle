@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'jacoco'
 }
 
 group 'ru.clevertec.utils'
@@ -20,3 +21,7 @@ test {
     //for JUnit5
     useJUnitPlatform()
 }
+
+test.finalizedBy jacocoTestReport
+//генерирует отчет по покрытию тестами, jacocoTestReport зависит от тестостов и вызывается после таски test
+jacocoTestReport.dependsOn test

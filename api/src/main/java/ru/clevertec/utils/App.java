@@ -1,5 +1,7 @@
 package ru.clevertec.utils;
 
+import ru.clevertec.utils.customAnnotation.Generated;
+
 public class App {
 
     public static void main(String[] args) {

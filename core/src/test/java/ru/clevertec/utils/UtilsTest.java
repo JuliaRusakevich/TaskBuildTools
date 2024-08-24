@@ -14,4 +14,11 @@ class UtilsTest {
         assertFalse(utils.isAllPositiveNumbers("1", "-2", "3"));
     }
 
+    @Test
+    void isAllPositiveNumberCheckException() {
+        Utils utils = new Utils();
+        assertThrows(NumberFormatException.class, () -> utils.isAllPositiveNumbers("aaa"));
+    }
+
+
 }
