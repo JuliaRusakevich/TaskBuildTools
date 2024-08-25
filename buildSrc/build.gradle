@@ -1,0 +1,30 @@
+plugins {
+    id 'java-gradle-plugin'
+    id 'jacoco'
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //для создания pdf файлов
+    implementation 'org.xhtmlrenderer:flying-saucer-core:9.9.0'
+    implementation 'org.xhtmlrenderer:flying-saucer-pdf:9.9.0'
+    implementation 'org.xhtmlrenderer:flying-saucer-pdf-openpdf:9.4.0'
+
+}
+
+test {
+    finalizedBy jacocoTestReport
+}
+jacocoTestReport {
+    dependsOn test
+}
+
+jacocoTestReport {
+    reports {
+        html.outputLocation = layout.buildDirectory.dir('jacocoHtml')
+    }
+}

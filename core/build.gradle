@@ -1,7 +1,10 @@
 plugins {
     id 'java'
     id 'jacoco'
+    // id 'custom-clevertec'
 }
+
+apply plugin: ru.clevertec.plugin.CustomPlugin
 
 group 'ru.clevertec.utils'
 version '1.0-SNAPSHOT'
