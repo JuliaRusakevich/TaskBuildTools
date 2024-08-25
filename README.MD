@@ -60,6 +60,8 @@ Invalid data. Please try again.
 
 Идея плагина заключалась в сохранении отчета по покрытию тестами (jacoco) в pdf формате. Плагин реализован,  пример вывода отчета можно посмотерть в файле output.pdf (p.s. отображение не очень симпатично выглядит, скорее всего потому что не применялись стили). Плагин подкючен в модуле core.
 
+![Screeshot2](https://github.com/JuliaRusakevich/TaskBuildTools/blob/master/Снимок%20экрана%202024-08-25%20в%2022.29.52.png)
+
 
 
 ![Screeshot1](https://github.com/JuliaRusakevich/TaskBuildTools/blob/master/Снимок%20экрана%202024-08-25%20в%2022.29.16.png)
