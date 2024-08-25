@@ -62,4 +62,4 @@ Invalid data. Please try again.
 
 
 
-![Screeshot1]https://github.com/JuliaRusakevich/TaskBuildTools/blob/master/Снимок%20экрана%202024-08-25%20в%2022.29.16.png
+![Screeshot1](https://github.com/JuliaRusakevich/TaskBuildTools/blob/master/Снимок%20экрана%202024-08-25%20в%2022.29.16.png)
