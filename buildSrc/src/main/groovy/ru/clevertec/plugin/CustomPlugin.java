@@ -6,9 +6,13 @@ import org.gradle.api.tasks.Copy;
 
 import org.xhtmlrenderer.pdf.ITextRenderer;
 
-import java.io.*;
 
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class CustomPlugin implements Plugin<Project> {
 
